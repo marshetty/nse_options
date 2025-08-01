@@ -1,0 +1,8 @@
+streamlit>=1.34
+streamlit-autorefresh>=0.1.0
+pandas>=2.2
+plotly>=5.22
+cloudscraper>=1.2.71
+requests>=2.32
+certifi>=2025.5.1
+tvdatafeed @ git+https://github.com/rongardF/tvdatafeed.git
