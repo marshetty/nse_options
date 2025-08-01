@@ -14,6 +14,11 @@ from helpers import (
 from helpers import log, SYMBOL, IST                       # reuse logger & constants
 from helpers import new_session                            # if you want it elsewhere
 
+import os, streamlit as st
+user = os.getenv("TV_USERNAME") or st.secrets["TV_USERNAME"]
+pwd  = os.getenv("TV_PASSWORD") or st.secrets["TV_PASSWORD"]
+
+
 # ============== USER SETTINGS ==============
 FETCH_EVERY_SECONDS  = 60
 TV_FETCH_SECONDS     = 60
