@@ -18,6 +18,9 @@ import os, streamlit as st
 user = os.getenv("TV_USERNAME") or st.secrets["TV_USERNAME"]
 pwd  = os.getenv("TV_PASSWORD") or st.secrets["TV_PASSWORD"]
 
+import os, streamlit as st, sys
+print("ENV  TV_USERNAME =", os.getenv("TV_USERNAME"), file=sys.stderr)
+print("SECR TV_USERNAME =", st.secrets.get("TV_USERNAME"), file=sys.stderr)
 
 # ============== USER SETTINGS ==============
 FETCH_EVERY_SECONDS  = 60
